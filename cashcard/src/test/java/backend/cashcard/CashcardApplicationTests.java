@@ -15,8 +15,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
 
-import javax.print.Doc;git commit -m "load cashcard"
-
 
 import static org.assertj.core.api.Assertions.assertThat;
 import java.net.URI;
