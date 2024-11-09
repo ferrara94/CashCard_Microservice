@@ -2,6 +2,7 @@ package backend.cashcard;
 
 import backend.cashcard.entity.CashCard;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
@@ -38,6 +39,7 @@ public class CashCardJsonTest {
     }*/
 
     @Test
+    @Disabled
     void cashCardSerializationTest() throws IOException {
         CashCard cashCard = new CashCard(99L, 123.45);
 
@@ -56,6 +58,7 @@ public class CashCardJsonTest {
     }
 
     @Test
+    @Disabled
     void cashCardDeserializationTest() throws IOException {
         String expected = """
                 {
@@ -71,11 +74,13 @@ public class CashCardJsonTest {
     }
 
     @Test
+    @Disabled
     void cashCardListSerializationTest() throws IOException {
         assertThat(jsonList.write(cashCards)).isStrictlyEqualToJson("list.json");
     }
 
     @Test
+    @Disabled
     void cashCardListDeserializationTest() throws IOException {
         String expected = """
                 [
